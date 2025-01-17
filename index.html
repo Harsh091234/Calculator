@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">    
+            <form >
+                <div class="display ">
+                    <input type="text" id="display">
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="AC" onclick="ClearScreen()" class="operator">
+                    <input type="button" value="DE" onclick="DeleteScreen()" class="operator">
+                    <input type="button" value="." onclick="AddNoOnScreen(this)" class="operator">
+                    <input type="button" value="/" onclick="AddNoOnScreen(this)" class="operator">
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="7" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="8" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="9" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="*" onclick="AddNoOnScreen(this)" class="operator">
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="4" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="5" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="6" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="-" onclick="AddNoOnScreen(this)" class="operator">
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="1" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="2" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="3" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="+" onclick="AddNoOnScreen(this)" class="operator">
+
+                </div>
+                <div class="btn">
+                    <input type="button" value="0" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="00" onclick="AddNoOnScreen(this)">
+                    <input type="button" value="=" class="equal operator" onclick="Evaluate()" >
+                    
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
